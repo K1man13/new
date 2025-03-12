@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Web Page</title>
+    <!-- Basic CSS for table styling -->
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Items List</h2>
+    <ol type="I">
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+        <li>Fifth Item</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Sample Image</h2>
+    <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg" 
+         alt="Lake and Mountains" 
+         width="500">
+
+    <!-- Contacts Table -->
+    <h2>Contacts List</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>123 Main St, City</td>
+            <td>555-0123</td>
+            <td>john@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>456 Oak Ave, Town</td>
+            <td>555-0456</td>
+            <td>jane@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Mike Johnson</td>
+            <td>789 Pine Rd, Village</td>
+            <td>555-0789</td>
+            <td>johnsonmike@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Sarah Williams</td>
+            <td>321 Elm St, County</td>
+            <td>555-1011</td>
+            <td>sarah_william@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Robert Brown</td>
+            <td>654 Birch Ln, State</td>
+            <td>555-1213</td>
+            <td>robert123@yahoo.com</td>
+        </tr>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form>
+        <!-- Text Inputs -->
+        <div>
+            <label for="name">Full Name:</label><br>
+            <input type="text" 
+                   id="name" 
+                   name="name" 
+                   placeholder="Enter your full name" 
+                   required>
+        </div><br>
+
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" 
+                   id="email" 
+                   name="email" 
+                   placeholder="your@email.com" 
+                   required>
+        </div><br>
+
+        <div>
+            <label for="password">Password:</label><br>
+            <input type="password" 
+                   id="password" 
+                   name="password" 
+                   placeholder="Create a password" 
+                   minlength="8" 
+                   required>
+        </div><br>
+
+        <div>
+            <label for="birthdate">Date of Birth:</label><br>
+            <input type="date" 
+                   id="birthdate" 
+                   name="birthdate" 
+                   required>
+        </div><br>
+
+        <!-- Dropdown -->
+        <div>
+            <label for="country">Country:</label><br>
+            <select id="country" name="country" required>
+                <option value="">Select a country</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+                <option value="Kenya">Kenya</option>
+            </select>
+        </div><br>
+
+        <!-- Radio Buttons -->
+        <div>
+            <label>Gender:</label><br>
+            <input type="radio" 
+                   id="male" 
+                   name="gender" 
+                   value="male" 
+                   required>
+            <label for="male">Male</label><br>
+            <input type="radio" 
+                   id="female" 
+                   name="gender" 
+                   value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" 
+                   id="other" 
+                   name="gender" 
+                   value="other">
+            <label for="other">Other</label>
+        </div><br>
+
+        <!-- Checkboxes -->
+        <div>
+            <label>Interests:</label><br>
+            <input type="checkbox" 
+                   id="tech" 
+                   name="interests" 
+                   value="tech">
+            <label for="tech">Technology</label><br>
+            <input type="checkbox" 
+                   id="sports" 
+                   name="interests" 
+                   value="sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" 
+                   id="music" 
+                   name="interests" 
+                   value="music">
+            <label for="music">Music</label>
+        </div><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+    </form>
+
+    <!-- Note Section -->
+    <h2>Note</h2>
+    <p>This is a sample HTML page created on March 12, 2025.</p>
+</body>
+</html>
